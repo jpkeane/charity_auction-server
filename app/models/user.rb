@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
   validates :physical_address, presence: true
 
   has_many :auction_admins
+  has_many :donations, foreign_key: 'donor_id'
 end

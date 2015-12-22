@@ -11,6 +11,7 @@ RSpec.describe Auction, type: :model do
 
   describe 'relationships' do
     it { is_expected.to have_many :auction_admins }
+    it { is_expected.to have_many :donations }
   end
 
   describe 'validations' do
