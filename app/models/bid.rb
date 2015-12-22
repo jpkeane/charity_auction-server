@@ -4,6 +4,7 @@ class Bid < ActiveRecord::Base
 
   validates :donation, presence: true
   validates :bidder, presence: true
+  validates :quantity, presence: true
   validates :amount_dollars, presence: true, numericality: { greater_than: 0 }
   validates :placed_at, presence: true
 
