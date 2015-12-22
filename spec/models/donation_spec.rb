@@ -20,6 +20,7 @@ RSpec.describe Donation, type: :model do
     it { is_expected.to belong_to :auction }
     it { is_expected.to belong_to :bid_type }
     it { is_expected.to belong_to :donor }
+    it { is_expected.to have_many :bids }
   end
 
   describe 'validations' do
