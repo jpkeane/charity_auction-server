@@ -1,4 +1,4 @@
-RSpec.describe User do
+RSpec.describe User, type: :model do
   attr_list = %w(name mobile_phone_number email_address physical_address)
   describe 'attributes' do
     attr_list.each do |attr|

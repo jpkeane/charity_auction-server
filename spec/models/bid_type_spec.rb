@@ -1,4 +1,4 @@
-RSpec.describe BidType do
+RSpec.describe BidType, type: :model do
   describe 'attributes' do
     it { is_expected.to have_attribute :name }
   end

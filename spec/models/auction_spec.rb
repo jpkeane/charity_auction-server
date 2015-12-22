@@ -1,4 +1,4 @@
-RSpec.describe Auction do
+RSpec.describe Auction, type: :model do
 
   describe 'attributes' do
     it { is_expected.to have_attribute :starts_at }

@@ -1,4 +1,4 @@
-RSpec.describe DonationCategory do
+RSpec.describe DonationCategory, type: :model do
   describe 'attributes' do
     it { is_expected.to have_attribute :name }
   end
