@@ -3,4 +3,6 @@ class User < ActiveRecord::Base
   validates :mobile_phone_number, presence: true, uniqueness: true
   validates :email_address, presence: true, uniqueness: true
   validates :physical_address, presence: true
+
+  has_many :auction_admins
 end

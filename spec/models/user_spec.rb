@@ -6,6 +6,10 @@ RSpec.describe User do
     end
   end
 
+  describe 'relationships' do
+    it { is_expected.to have_many :auction_admins }
+  end
+
   describe 'validations' do
     attr_list.each do |req_attr|
       it { is_expected.to validate_presence_of req_attr }
