@@ -12,9 +12,12 @@ RSpec.describe Auction, type: :model do
   describe 'relationships' do
     it { is_expected.to have_many :auction_admins }
     it { is_expected.to have_many :donations }
+    it { is_expected.to belong_to :organization }
   end
 
   describe 'validations' do
+    it { is_expected.to validate_presence_of :organization }
+
     it 'ends_at is after start_at' do
       subject.ends_at = DateTime.new(2015,12,1,0,0)
       subject.starts_at = subject.ends_at.advance(seconds: 1)

@@ -6,5 +6,6 @@ FactoryGirl.define do
     physical_address { "#{ Faker::Address.street_address } #{ Faker::Address.city } #{ Faker::Address.postcode }" }
     name "#{ Faker::Company.name } #{ Faker::Company.suffix } Charity Auction"
     donation_window_ends_at "2015-12-20 19:19:52"
+    association :organization, strategy: :build
   end
 end
