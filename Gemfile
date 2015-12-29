@@ -5,6 +5,7 @@ gem 'rails', '4.2.5'
 gem 'pg', '~> 0.15'
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'doorkeeper'
 
 gem 'unicorn'
 

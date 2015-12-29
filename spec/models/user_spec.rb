@@ -4,6 +4,12 @@ RSpec.describe User, type: :model do
     attr_list.each do |attr|
       it { is_expected.to have_attribute attr }
     end
+
+    it 'persists a password digest based on the authentication password' do
+      password = 'password123'
+      subject = FactoryGirl.create(:user, password: password)
+      expect(subject.authenticate(password)).to eq subject
+    end
   end
 
   describe 'relationships' do
