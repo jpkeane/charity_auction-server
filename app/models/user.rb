@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   validates :mobile_phone_number, presence: true, uniqueness: true
   validates :email_address, presence: true, uniqueness: true
   validates :physical_address, presence: true
+  validates :password, presence: true
 
   has_many :auction_admins
   has_many :donations, foreign_key: 'donor_id'

@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "name": "Users",
+      "examples": [
+        {
+          "description": "POST /v1/users",
+          "link": "users/post_v1users.json",
+          "groups": "all",
+          "route": "/v1/users",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

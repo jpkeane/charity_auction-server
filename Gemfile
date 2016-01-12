@@ -9,6 +9,9 @@ gem 'doorkeeper'
 
 gem 'unicorn'
 
+gem 'apitome'
+gem 'jsonapi-resources'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
@@ -19,6 +22,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'rspec_api_documentation'
 end
 
 group :test do

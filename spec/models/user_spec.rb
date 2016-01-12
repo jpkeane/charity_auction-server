@@ -23,6 +23,8 @@ RSpec.describe User, type: :model do
       it { is_expected.to validate_presence_of req_attr }
     end
 
+    it { is_expected.to validate_presence_of :password}
+
     it 'validates uniqueness of mobile_phone_number' do
       original = FactoryGirl.create(:user)
       duplicate = FactoryGirl.build(:user, mobile_phone_number: original.mobile_phone_number)
